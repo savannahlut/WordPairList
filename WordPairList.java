@@ -28,10 +28,7 @@ public class WordPairList{
         return num;
     }
 
-    public String toString(){
-        for(WordPair Wp : allPairs){
-            return "(" + Wp + ")";
-        }
-        return "";
+    public ArrayList<WordPair> pairs(){
+        return allPairs;
     }
 }
