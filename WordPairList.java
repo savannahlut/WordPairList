@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class WordPairList{
 
     /** The list of word pairs, initialized by the constructor. */
@@ -7,10 +9,17 @@ public class WordPairList{
     * Precondition: words.length >= 2
     */
     public WordPairList(String[] words){
+        for(int i = 0; i < words.length; i++)
+        for(int j = i + 1; j < words.length; j++){
+            allPairs.add(new WordPair(words[i], words[j]));
+        }
     }
 
     /** Returns the number of matches as described in part (b).
     */
     public int numMatches(){
+        for(WordPair n : allPairs){
+            if()
+        }
     }
 }
